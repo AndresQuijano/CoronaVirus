@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <link rel="stylesheet" href="/styles.css"/>
+    <script type="module" src="/controllers/ctrlInfoPersonal.js"></script>
+    <title>Around</title>
+</head>
+<body>
+    <div class="content">
+        <div class="content-set"> 
+            <h1>Datos personales</h1>
+        </div>
+        <form id="form-personal" class=content-set novalidate/>
+            <div class="form-set">
+                <label for="name" >Nombre</label>
+                <input id="name" type="text" placeholder="p.e. Javier" required="true" />
+            </div>
+            <div class=form-set>                
+                <label for="phone" >Teléfono (con prefijo)</label>
+                <input id="phone" type="tel" required="true" pattern="\+([0-9 ])+"
+                    placeholder="p.e. +57 300 123 45 67"/>
+            </div>            
+            <div class=form-set>
+                <p>Género</p>
+                <div id=radio-gender>
+                    <div>
+                        <input id="male" type="radio" name="gender" value="male" required="true"/>
+                        <label for="male">Masculino</label>
+                    </div>
+                    <div>
+                        <input id="female" type="radio" name="gender" value="female" required="true"/>
+                        <label for="female">Femenino</label>
+                    </div>
+                    <div>
+                        <input id="other" type="radio" name="gender" value="other" required="true"/>
+                        <label for="other">Otro</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-set">
+                <label for="age">Edad</label>
+                <input type="number" id="age" required="true" min="0" max="99"/>
+            </div>
+            <div class="form-set">
+                <p>Tu estado con relación al COVID-19 es:</p>
+                <div id="radio-status">
+                    <div> 
+                        <input id="uninfected" type="radio" name="status" value="uninfected" required="true"/>
+                        <label for="uninfected">Sano</label>
+                    </div>
+                    <div>
+                        <input id="infected" type="radio" name="status" value="infected" required="true"/>
+                        <label for="infected">Infectado</label>
+                    </div>
+                    <div>
+                        <input id="wasInfected" type="radio" name="status" value="wasInfected" required="true"/>
+                        <label for="wasInfected">Recuperado</label>
+                    </div>
+                    <div>
+                        <input id="many" type="radio" name="status" value="many" required="true"/>
+                        <label for="many">Recuperado e infectado nuevamente</label>
+                    </div>
+                </div>
+            </div>    
+        </form>
+        <div class="content-set buttons-container">
+            <div class="buttons">
+                <button id="btn-back">&lt</button>
+                <button id="btn-next" form="form-personal">&gt</button>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>

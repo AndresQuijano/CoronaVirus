@@ -1,0 +1,178 @@
+@font-face{
+    font-family: 'Roboto';
+    src: url(/fonts/Roboto-Light-webfont.woff) format(woff);
+    font-style: normal;
+    font-weight: 300;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #9381ff;
+    font-family: 'Roboto',sans-serif;
+    font-size: 17px;
+    line-height: 1.5em;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 100%;
+    max-width: 400px;
+} 
+
+.content-set {
+    padding: 17px;
+    background-color: #1d2d44;
+    color: #fff1e6;
+    border-right: 4px solid #432371;
+    border-bottom: 4px solid #432371;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+h1{
+    font-size: 1.5;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.2em;
+}
+
+.paragraph {
+    margin-top: 1em;
+}
+
+.form-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+
+.form-set:last-of-type{
+    margin-bottom: 0;
+}
+
+.form-set input[type="text"],
+.form-set input[type="tel"],
+.form-set input[type="number"]  {
+    font-size: 1.1em;
+    border-radius: 5px;
+    padding-left: 3px;
+}
+
+.form-set input[type="radio"] {
+    margin-left: 8px;
+}
+
+.form-set input[type="radio"]:first-of-type {
+    margin-left: 0;
+}
+
+button {
+    color: #fff1e6;
+    background-color: #1d2d44;
+    border: 1px solid #fff1e6;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    border: none;
+    font-size: 2em;
+}
+
+.buttons button a {
+    color: #fff1e6;
+    text-decoration: none;
+}
+
+.buttons button:hover{
+    color: red;
+}
+
+.buttons button:hover:disabled{
+    background-color:#1d2d44 ;
+}
+
+.buttons button:disabled {
+    color:  #1d2d44;
+    border: none;
+}
+
+.buttons button:focus {outline:0;}
+ 
+.big-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2.5em;
+}
+
+.big-button button{
+    border: 1px solid #fff1e6;
+    border-radius: 50%;
+    font-size: 4em;
+    width: 1.2em;
+
+    line-height: 70px;
+    height: 70px;
+    text-align: center;
+
+    transition: transform 1s;
+}
+
+.big-button button:hover{
+    background-color: #432371;
+
+    transform: rotate(360deg);
+}
+
+.big-button button:focus {outline:0;}
+
+/* .iti {
+    color: #1d2d44;
+} */
+
+.table{
+    width: 100%;
+    margin-top: 1em;
+}
+
+.btn-remove {
+    background-color: #F87060;
+    font-size: 0.6em;
+    border: 1px solid #F87060;
+    border-radius: 50%;
+    color: #1d2d44;
+}
+
+.sp-infected {
+    color: #F87060;
+}
+
+.invalid-field{
+    border-color:  #F87060;
+}
+
+.error-label {
+    color:  #F87060;
+}
+
+.buttons-container{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
