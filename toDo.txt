@@ -1,0 +1,6 @@
+1. El prefijo del teléfono
+3. Cuadrar el tamaño de la fuente según ese indíce mágico
+5. Ponerlo a funcionar con nodemon.
+7. BigButton se ve feo en firefox.
+9. No depender de las cookies
+10. Borrar las cookies cuando le de a la última pantalla
