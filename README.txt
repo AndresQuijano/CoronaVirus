@@ -1,1 +1,1 @@
-This project is part of my path on learning on HTML, JS and CSS.
+This project is part of my path on learning HTML, JS and CSS.
